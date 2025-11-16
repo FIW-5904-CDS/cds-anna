@@ -3,20 +3,19 @@ Name: ___Anna Reachmack______________		Date: ____9/7/25_______________
 #	General Info
 - Proposed Title: Forest History/Shifts in day Roost Characteristics of Coastal Northern long-eared myotis maternity colony
 - Likely coauthors: Katherine Gorman, Mark Ford
-- Proposed journal (1st choice): no idea
-- Proposed journal (backup): no idea
 
-## The overarching question of this paper is how are preferred day roost selections changing over time?
+## The overarching questions of this paper are how are Northern long-eared bat populations using forests within their coastal range? Why are coastal Northern long-eare bat populations persisting compared to their declining mainland populations?
 ---
 ## Which is important/interesting/unresolved because
 - Northern long-eared bats (MYSE) are federally endangered and threatened by extinction due to white-nose syndrome.
 - MYSE habitat is fragmented by development
 - To inform future monitoring and management protocols, it is imperative to know how MYSE maternity colonies use the landscape as a network
+- Approximately 99% of northeast populations are extirpated.
 ---
 ## To answer this question/explore this topic, I addressed the following objectives: 
 - Examine changes in how the coastal landscape is being utilized by MYSE maternity colonies (what type of forest stands/trees are being utilized as day roosts)
-- Explore the social dynamics of maternity colony by creating a model of fission-fusion behavior
 - Determine the forest stand age class and identify key extreme climatic events by coring roost trees
+-Assess shifts in landscape use over time
 ---
 ## I addressed these objectives: 
 - In Fire Island National Seashore 
