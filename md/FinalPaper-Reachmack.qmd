@@ -1,0 +1,58 @@
+---
+title: "Investigating Preferred Day-Roost Characteristics by coastal Northern Long-Eared Myotis Populations"
+author:
+ - name: Anna Reachmack
+   affiliations: [VT]
+   corresponding: true
+   email: annareachmack@vt.edu
+
+affiliations:
+  - id: VT
+    name: Department of Fish and Wildlife Conservation, Virgina Tech, Blacksubrg, VA, USA
+
+       
+abstract: "La dee dah."
+format: 
+  html: default
+  pdf:
+    format: manuscript  
+    #documentclass: article
+    keep-tex: true
+editor: visual
+execute:
+  cache: true
+  freeze: "auto"
+  #keep-md: true
+---
+
+\maketitle
+
+# Main text
+
+<!-- # Introduction -->
+
+Northern long-eared bats are federally endangered and are close to extirpation throughout their Northeast range due to fungal pathogen Pseudogymnoascus Destructans that causes White-nose Syndrome. 
+
+<!-- # Methods -->
+
+<!-- # Results -->
+
+# Tables
+
+```{r echo=FALSE}
+#| label: SummaryTable
+#| tbl-cap: "Summary of bats captured in WIFL in 2025"
+#| echo: false
+  knitr::include_graphics("../figs/finaltablebatcaptures2025.pdf")
+```
+
+\newpage
+
+# Figures
+
+```{r}
+#| label: FourPanel
+#| fig-cap: "Analyses conducted to assess important day roost characteristics"
+#| echo: false
+knitr::include_graphics("../figs/fourpanelfigures1.pdf")
+```
