@@ -1,0 +1,7 @@
+commit 4208679be1328cc7062a1be79a0091013d88bb6c
+Author: Anna Reachmack <annareachmack@vt.edu>
+Date:   Wed Nov 12 12:07:49 2025 -0500
+
+    Add multipanel figure showing study area and significant bat roost tree characteristics
+    
+    Figure caption: (A) Study area (B-D) Important roost chracteristics, probability of bat presence based on 2 prinipal components.
