@@ -1,5 +1,5 @@
 ---
-title: "Characterizing day-roost preference and landscape use of the endangered Northern long-eared myotis population of Fire Island National Seashore, New York"
+title: "Characterizing day-roost preference and landscape use of the endangered Northern long-eared myotis in Fire Island National Seashore, New York"
 author:
  - name: Anna Reachmack
    affiliations: [VT]
@@ -18,36 +18,57 @@ editor: visual
 execute:
   cache: false
   freeze: false
-  bibliography: ../tex/MYSEbib.bib
+  warning: false
+  
+  
+bibliography: ../tex/MYSEbib/MYSEbib.bib
 # csl: science.csl
- 
+
 ---
+
+```{r echo=FALSE}
+treelatlong <- read.csv("C:/Users/annar/OneDrive/Documents/FIIS/Data/Raw/treedataFIIS2025.csv")
+
+library(tidyverse)
+
+treelatlong <- treelatlong |>
+  select(gpspoint, lat, long)
+
+treelatlong <- treelatlong |>
+  add_row(gpspoint = 'UTILPOLE1', lat = 40.77519, long = -72.83039) |>
+add_row(gpspoint = 'UTILPOLE2', lat = 40.77467, long = -72.83020) #add the utility poles I didn't include in the PCA analysis
+
+treelatlong <- treelatlong |>
+  mutate(long = -abs(long))
+
+```
 
 # Introduction
 
-The Northern long-eared myotis (Myotis septentrionalis; MYSE) is a federally endangered bat largely extirpated throughout its Northeast range due to White-Nose Syndrome (WNS), with populations persisting only in coastal environments. Fire Island (FIIS) hosts the only known recently successful northern long-eared bat colony in New York and is one of the few parks in the Northeast region where any MYSE are still observed through 2022. 
-
-add citations from bib! 
+The Northern long-eared myotis (Myotis septentrionalis; MYSE) is a federally endangered bat that has been largely extirpated throughout its Northeastern range due to White-Nose Syndrome (WNS) [@krueger_white-nose_2024]. Fire Island National Seashore (FIIS) hosts the only recently confirmed MYSE colony in New York and is among the few locations in the Northeast where MYSE are still observed. During summer, MYSE form maternity colonies that move among several tree roosts in small family groups, but little is known about their roost preferences. Because post-WNS MYSE detections are rare, land managers lack empirical data on current habitat use so current management plans may no longer reflect the ecological conditions of surviving colonies. 
+This study will monitor the remaining MYSE colonies in FIIS to expand understanding of habitat use and support evidence-based management of one of the last known regional populations. 
 
 # Methods
+
+Research PIs and GRAs will mist-net, band, and radio-tag Northern long-eared bats using Holohil LB-2X 0.27 g VHF transmitters during the 2024-2026 summer seasons. Radio-tagged MYSE will be tracked daily to roost trees for the duration of the transmitter battery life. Upon the location of roosts, researchers will collect data on tree measurements. 
 
 To summarize variation in day-roost characteristics across tree species, we conducted principal components analysis (PCA) on standardized variables (mean-centered and scaled to unit variance). We interpreted loadings for the first two principal components to identify correlated gradients among DBH and Decay Stage. Site scores from the PCA were used as predictors in subsequent regression models. Analyses were performed in R version 4.4.1 using the stats package.
 
 # Results
 
-Across tree species, DBH and decay stage contributed to 76% of the variance in the data.
+During the 2025 summer season, we identified `r nrow(treelatlong)` day-roosts. Two of the roosts were anthropogenic structures and eight were trees. 
 
-Wants in line code injected into results. Reference table and figures
+Across tree species, DBH and decay stage contributed to 76% of the variance in the data.
 
 # Discussion
 
-Our results supported previous studies in FIIS. Snags and decayed black locusts are preferred by MYSE. 
+Our Principal Components Analysis indicated that DBH and decay stage are important components of day-roost tree characteristics. 
 
 # Tables
 
 ```{r echo=FALSE}
 #| label: SummaryTable
-#| tbl-cap: "A summary of the bats captured during mist-netting surveys conducted in 2025."
+#| tbl-cap: "A summary of the bats captured during mist-netting surveys conducted in 2025. Bat species are (Eptesicus fuscus; EPFU), eastern red bats (Lasiurus borealis; LABO), silver-haired bats ((Lasionycteris noctivagans; LANO), and Northern long-eared bats (Myotis septentrionalis; MYSE)."
 #| echo: false
 if (knitr::is_html_output()) {
   htmltools::includeHTML("../figs/finaltablebatcaptures2025.html")
@@ -58,11 +79,18 @@ if (knitr::is_html_output()) {
 
 # Figures
 
-```{r}
-#| label: FourPanel
-#| fig-cap: "Analyses conducted to assess important day roost characteristics"
+```{r echo=FALSE}
+#| label: PCA
+#| fig-cap: "Principle components 1 and 2 for roosts used by Northern long-eared bats at the William Floyd Estate (2025). Arrow lengths indicate effect size. Direction of the arrow relative to the species indicates a positive or negative relationship. For instance, there is a positive relationship with snag as decay stage and basal area increase."
 #| echo: false
-knitr::include_graphics("../figs/fourpanel.png")
+knitr::include_graphics("Rplot02.png")
+```
+
+```{r echo=FALSE}
+#| label: Map
+#| fig-cap: "The locations of day roosts used at the William Floyd Estate in 2025. The roosts were all located in the Northwest area of the estate."
+#| echo: false
+knitr::include_graphics("map_roosts.png")
 ```
 
 # References

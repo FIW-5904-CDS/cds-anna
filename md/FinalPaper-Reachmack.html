@@ -8,7 +8,7 @@
 
 <meta name="author" content="Anna Reachmack">
 
-<title>Characterizing day-roost preference and landscape use of the endangered Northern long-eared myotis population of Fire Island National Seashore, New York</title>
+<title>Characterizing day-roost preference and landscape use of the endangered Northern long-eared myotis in Fire Island National Seashore, New York</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="FinalPaper-Reachmack_files/libs/clipboard/clipboard.min.js"></script>
@@ -48,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Characterizing day-roost preference and landscape use of the endangered Northern long-eared myotis population of Fire Island National Seashore, New York</h1>
+<h1 class="title">Characterizing day-roost preference and landscape use of the endangered Northern long-eared myotis in Fire Island National Seashore, New York</h1>
 </div>
 
 
@@ -80,28 +100,26 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The Northern long-eared myotis (Myotis septentrionalis; MYSE) is a federally endangered bat largely extirpated throughout its Northeast range due to White-Nose Syndrome (WNS), with populations persisting only in coastal environments. Fire Island (FIIS) hosts the only known recently successful northern long-eared bat colony in New York and is one of the few parks in the Northeast region where any MYSE are still observed through 2022.</p>
+<p>The Northern long-eared myotis (Myotis septentrionalis; MYSE) is a federally endangered bat that has been largely extirpated throughout its Northeastern range due to White-Nose Syndrome (WNS) <span class="citation" data-cites="krueger_white-nose_2024">(<a href="#ref-krueger_white-nose_2024" role="doc-biblioref">Krueger et al. 2024</a>)</span>. Fire Island National Seashore (FIIS) hosts the only recently confirmed MYSE colony in New York and is among the few locations in the Northeast where MYSE are still observed. During summer, MYSE form maternity colonies that move among several tree roosts in small family groups, but little is known about their roost preferences. Because post-WNS MYSE detections are rare, land managers lack empirical data on current habitat use so current management plans may no longer reflect the ecological conditions of surviving colonies. This study will monitor the remaining MYSE colonies in FIIS to expand understanding of habitat use and support evidence-based management of one of the last known regional populations.</p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
+<p>Research PIs and GRAs will mist-net, band, and radio-tag Northern long-eared bats using Holohil LB-2X 0.27 g VHF transmitters during the 2024-2026 summer seasons. Radio-tagged MYSE will be tracked daily to roost trees for the duration of the transmitter battery life. Upon the location of roosts, researchers will collect data on tree measurements.</p>
 <p>To summarize variation in day-roost characteristics across tree species, we conducted principal components analysis (PCA) on standardized variables (mean-centered and scaled to unit variance). We interpreted loadings for the first two principal components to identify correlated gradients among DBH and Decay Stage. Site scores from the PCA were used as predictors in subsequent regression models. Analyses were performed in R version 4.4.1 using the stats package.</p>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
+<p>During the 2025 summer season, we identified 10 day-roosts. Two of the roosts were anthropogenic</p>
 <p>Across tree species, DBH and decay stage contributed to 76% of the variance in the data.</p>
+<p>Wants in line code injected into results. Reference table and figures</p>
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
-<p>Our results supported previous studies in FIIS. Snags and decayed black locusts are preferred by MYSE.</p>
+<p>Our Principal Components Analysis indicated that DBH and decay stage are important components of day-roost tree characteristics.</p>
 </section>
 <section id="tables" class="level1">
 <h1>Tables</h1>
-<div class="cell" data-tbl-cap="A summary of the bats captured during mist-netting surveys conducted in 2025.">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: `includeHTML()` was provided a `path` that appears to be a complete HTML document.
-✖ Path: ../figs/finaltablebatcaptures2025.html
-ℹ Use `tags$iframe()` to include an HTML document. You can either ensure `path` is accessible in your app or document (see e.g. `shiny::addResourcePath()`) and pass the relative path to the `src` argument. Or you can read the contents of `path` and pass the contents to `srcdoc`.</code></pre>
-</div>
+<div class="cell" data-tbl-cap="A summary of the bats captured during mist-netting surveys conducted in 2025. Bat species are (Eptesicus fuscus; EPFU), eastern red bats (Lasiurus borealis; LABO), silver-haired bats ((Lasionycteris noctivagans; LANO), and Northern long-eared bats (Myotis septentrionalis; MYSE).">
 <div class="cell-output-display">
 
 
@@ -563,7 +581,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
   
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<caption>A summary of the bats captured during mist-netting surveys conducted in 2025.</caption>
+<caption>A summary of the bats captured during mist-netting surveys conducted in 2025. Bat species are (Eptesicus fuscus; EPFU), eastern red bats (Lasiurus borealis; LABO), silver-haired bats ((Lasionycteris noctivagans; LANO), and Northern long-eared bats (Myotis septentrionalis; MYSE).</caption>
 <thead>
 <tr class="gt_heading header">
 <th colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="text-align: center;">Summary of Bats Captured in 2025</th>
@@ -676,18 +694,33 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../figs/fourpanel.png" class="img-fluid figure-img" width="1200"></p>
-<figcaption>Analyses conducted to assess important day roost characteristics</figcaption>
+<p><img src="Rplot02.png" class="img-fluid figure-img" width="897"></p>
+<figcaption>Principle components 1 and 2 for roosts used by Northern long-eared bats at the William Floyd Estate (2025). Arrow lengths indicate effect size. Direction of the arrow relative to the species indicates a positive or negative relationship. For instance, there is a positive relationship with snag as decay stage and basal area increase.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="map_roosts.png" class="img-fluid figure-img" width="1200"></p>
+<figcaption>The locations of day roosts used at the William Floyd Estate in 2025. The roosts were all located in the Northwest area of the estate.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="references" class="level1 unnumbered">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-krueger_white-nose_2024" class="csl-entry" role="listitem">
+Krueger, Sarah K., Sarah C. Williams, Joy M. O’Keefe, Gene A. Zirkle, and Catherine G. Haase. 2024. <span>“White-Nose Syndrome, Winter Duration, and Pre-Hibernation Climate Impact Abundance of Reproductive Female Bats.”</span> <em>PLOS ONE</em> 19 (4): e0298515. <a href="https://doi.org/10.1371/journal.pone.0298515">https://doi.org/10.1371/journal.pone.0298515</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
