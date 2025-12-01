@@ -88,7 +88,7 @@ knitr::include_graphics("Rplot02.png")
 
 ```{r echo=FALSE}
 #| label: Map
-#| fig-cap: "The locations of day roosts used at the William Floyd Estate in 2025. The roosts were all located in the Northwest area of the estate."
+#| fig-cap: "The locations of day roosts used at the William Floyd Estate in 2025. Identified roosts were located in the Northwest region of the estate."
 #| echo: false
 knitr::include_graphics("map_roosts.png")
 ```
