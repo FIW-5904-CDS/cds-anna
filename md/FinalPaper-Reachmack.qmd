@@ -104,7 +104,7 @@ knitr::include_graphics("map_roosts.png")
 #| echo: false
 knitr::include_graphics("Rplot02.png")
 ```
-
+\clearpage
 
 # References
 
